@@ -8,18 +8,12 @@ html {
 
 .color__oscuro {
     background: rgb(236,236,236);
-    background: linear-gradient(180deg, rgba(236,236,236,0.311659698058911) 0%, rgba(232,232,255,1) 50%);
+    background: linear-gradient(179deg, rgba(236,236,236,0.311659698058911) 0%, rgba(232,232,255,1) 50%);
 }
 
 .color__claro {
     background: rgb(236,236,236);
-    background: linear-gradient(360deg, rgba(236,236,236,0.311659698058911) 0%, rgba(232,232,255,1) 50%);
-}
-
-.bullet {
-    margin: 0 10px;
-    opacity: .9;
-    color: #fff;
+    background: linear-gradient(359deg, rgba(236,236,236,0.311659698058911) 0%, rgba(232,232,255,1) 50%);
 }
 
 .logo {
@@ -40,6 +34,51 @@ html {
     margin: 0 auto;
 }
 
+.hover:hover .transition {
+    opacity: 0.1;
+}
+
+.hover:hover .hide {
+    opacity: 0;
+}
+
+.hover:hover .equipo__redes {
+    opacity: 1;
+}
+
+.transition {
+    transition: .6s ease;
+}
+
+.opacity {
+    opacity: 0.5;
+}
+
+.equipo__redes {
+    opacity: 0;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.equipo__redes__hidden {
+    position: relative;
+    top: 20%;
+}
+
+.gallery a {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.gallery:hover .opacity {
+    opacity: 1;
+}
+
 .fa-stack {
     font-size: 2em;
     color: #999;
@@ -58,20 +97,18 @@ html {
     float: left;
 }
 
-@media (min-width: 990px) {
-    .nav__padding {
-        padding-left: 4.5rem !important;
-    }
-    .position__end {
-        text-align: end;
-    }
-    .position__start {
-        text-align: start;
-    }
+.menu__top {
+    background-color: black;
+    height: 50px;
+    width: 40px;
+    border-radius: 3px;
+    left: 50%;
+    margin-left: -25px;
+    margin-top: -45px;
+    position: absolute;
 }
 
-
-#menu__top__inside {
+.menu__top__inside {
     background-image: url(../images/top_bg.png);
     background-size: 18px 11px;
     background-position: 0 0;
@@ -83,7 +120,7 @@ html {
     width: 18px;
 }
 
-#menu__top__inside:hover{
+.menu__top__inside:hover{
     animation:subeflecha .3s linear infinite
 }
 
@@ -92,47 +129,15 @@ html {
     100%{background-position:0 -10px}
 }
 
-/* 
-#formulario input[type=text], [type=email], textarea {
-    color: rgb(0, 0, 0);
-    font-family: 'Oswald', sans-serif;
-    font-size: 18px;
-    text-transform: uppercase;
-    padding-left: 3%;
-    padding-right: 3%;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    width: 94%;
-    background: #f5f5f5;
-    border-radius: 3px;
-    margin-bottom: 20px;
-    border: 0;
+@media (min-width: 990px) {
+    .nav__padding {
+        padding-left: 4.5rem !important;
+    }
+    .position__end {
+        display:flex;
+        justify-content: end;
+    }
+    .position__start {
+        display: flex;
+    }
 }
-
-#formulario input[type=submit], input[type=reset] {
-    background: #222;
-    color: #fff;
-    font-family: montserrat,sans-serif;
-    font-size: 14px;
-    text-transform: uppercase;
-    padding: 10px 15px;
-    letter-spacing: 0;
-    line-height: 14px;
-    cursor: pointer;
-    border-radius: 3px;
-    text-align: center;
-} */
-
-
-
-
-
-
-/* #formulario input:focus {
-    background-color: #e8f0fe;
-    transition: all 2s;
-}
-
-#formulario textarea:focus {
-    background-color: #e8f0fe;
-} */
