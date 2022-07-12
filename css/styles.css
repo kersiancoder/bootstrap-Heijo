@@ -62,9 +62,6 @@ html {
     .nav__padding {
         padding-left: 4.5rem !important;
     }
-    .hide__sm {
-        display: none;
-    }
     .position__end {
         text-align: end;
     }
@@ -72,21 +69,6 @@ html {
         text-align: start;
     }
 }
-
-
-@media (max-width: 990px) {
-    .hide__xs {
-        display: none;
-    }
-}
-
-
-
-
-
-
-
-
 
 
 #menu__top__inside {
